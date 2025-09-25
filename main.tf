@@ -56,7 +56,7 @@ resource "aws_instance" "my_server" {
 }
 
 terraform {
-   required_version = ">= 1.9.0"
+   required_version = ">= 1.1.9"
 
    backend "s3" {
      bucket = "my-terraform-state-bucket" # S3 bucket for state storage
