@@ -32,12 +32,3 @@ sed -i 's/password_here/password/g' wp-config.php
 chown -R apache:apache /var/www/html/
 
 mysql_secure_installation <<EOF
-
-
-      y
-      password
-      password
-      y
-      y
-      y
-      y
