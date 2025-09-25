@@ -47,8 +47,8 @@ resource "aws_instance" "my_server" {
    key_name      = "${local.aws_key}"          # Specify the SSH key pair name
 
    user_data = "${file("wp_install.sh")}"
-   security_groups=[aws_security_group.allow_http_ssh.name]
-  
+   # security_groups=[aws_security_group.allow_http_ssh.name]
+
    # Add tags to the EC2 instance for identification
    tags = {
      Name = "my ec2"
