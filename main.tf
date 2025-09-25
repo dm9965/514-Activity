@@ -59,9 +59,9 @@ terraform {
    required_version = ">= 1.1.9"
 
    backend "s3" {
-     bucket = "my-terraform-state-bucket" # S3 bucket for state storage
+     bucket = "doms-terraform-state-bucket" # S3 bucket for state storage
      key = "prod/terraform.tfstate" # State file path in the bucket
-     region = "us-west-2" # AWS region
+     region = "us-east-1" # AWS region
      encrypt = true
    }
 }
