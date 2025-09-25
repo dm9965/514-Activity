@@ -82,5 +82,10 @@ jobs:
           terraform_version: 1.1.9 # Specifies Terraform version to use
           terraform_wrapper: false
 
+      # Step 4: Initialize Terraform working directory
+      - name: Terraform Init
+        run: terraform init
+
+      # Step 5: Destroy the instance
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
